@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import TasksReducer from "./Styled-component/Redux/TasksReducer";
 import {Provider} from 'react-redux'
 import AppReducer from "./Redux/AppReducer";
 import thunk from 'redux-thunk';
