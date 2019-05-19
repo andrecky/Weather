@@ -1,5 +1,5 @@
-![alt tag](https://pp.userapi.com/c846323/v846323024/204bee/YaLr8_0Db1E.jpg"screen")
-![alt tag](https://pp.userapi.com/c846323/v846323024/204bf6/HogsqycWm5U.jpg"screen")
+![alt tag](https://pp.userapi.com/c846323/v846323024/204bee/YaLr8_0Db1E.jpg)
+![alt tag](https://pp.userapi.com/c846323/v846323024/204bf6/HogsqycWm5U.jpg)
 
 
 
