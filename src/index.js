@@ -1,12 +1,24 @@
 import React from 'react';
+import {combineReducers, createStore, applyMiddleware} from "redux";
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import TasksReducer from "./Styled-component/Redux/TasksReducer";
+import {Provider} from 'react-redux'
+import AppReducer from "./Redux/AppReducer";
+import thunk from 'redux-thunk';
+import {composeWithDevTools} from "redux-devtools-extension";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const superReducer = combineReducers({
+    Reducer: AppReducer,
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+
+});
+
+const store = createStore(superReducer, composeWithDevTools(applyMiddleware(thunk)),);
+
+ReactDOM.render(<Provider store={store}> <App/></Provider>, document.getElementById('root'));
+
 serviceWorker.unregister();
+export default store
